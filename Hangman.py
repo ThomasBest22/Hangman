@@ -3,6 +3,7 @@
 #les imports
 import time
 import random
+import sys
 #voilà
 
 #les variables
@@ -38,7 +39,8 @@ while banana_word_copy != listedudevinnage:
             guesses=guesses-1
             if guesses == 0:
                 print("Sorry. You lost! The word was " + word_to_find + ".")
-                exit()
+                time.sleep(4)
+                sys.exit()
             if guesses == 1:
                 print("No, sorry. The letter " + lettre + " isn't in the word.\nYou get " + str(guesses) + " guess before getting hanged")
                 break
@@ -49,3 +51,4 @@ while banana_word_copy != listedudevinnage:
 else:
     time.sleep(1)
     print("Well done ! You guessed the world which was " + word_to_find)
+    time.sleep(4)
