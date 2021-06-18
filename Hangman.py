@@ -2,14 +2,17 @@
 
 #les imports
 import time
+import random
 #voilà
 
 #les variables
-word_to_find = "libellule"
+words_to_find = open("words.txt").read().splitlines()
+word_to_find = random.choice(words_to_find)
+# word_to_find = 
 #fin des variables
 
 #explication
-print ("Hi, you are playing a Hangman game .\nThe word to be guessed is randomly selected in the English dictionnary.\nYou have 7 guesses to find the word before losing.\nGood luck!")
+print ("Hi, you are playing a Hangman game .\nThe word to be guessed is randomly selected in the English dictionnary.\nYou can guess 7 times wrong the word before losing.\nGood luck!")
 time.sleep(1)
 #début du code
 banana_word = list(word_to_find)
