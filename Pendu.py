@@ -7,7 +7,7 @@ import sys
 #voilà
 
 #les variables
-words_to_find = open("mot.txt").read().splitlines()
+words_to_find = open("mots.txt").read().splitlines()
 word_to_find = random.choice(words_to_find).lower()
 # word_to_find = 
 #fin des variables
