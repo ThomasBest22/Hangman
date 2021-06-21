@@ -38,14 +38,26 @@ while banana_word_copy != listedudevinnage:
         if nbrdefoislalettrepourleif == 0:
             guesses=guesses-1
             if guesses == 0:
+                print ("  +---+\n  |   |\n  O   |\n /|\  |\n / \  |\n      |\n=========")
                 print("Sorry. You lost! The word was " + word_to_find + ".")
                 time.sleep(4)
                 sys.exit()
             if guesses == 1:
                 print("No, sorry. The letter " + lettre + " isn't in the word.\nYou get " + str(guesses) + " guess before getting hanged")
+                print ("  +---+\n  |   |\n  O   |\n /|\  |\n /    |\n      |\n=========")
                 break
             else:
                 print("No, sorry. The letter " + lettre + " isn't in the word.\nYou get " + str(guesses) + " guesses before getting hanged")
+                if guesses == 6:
+                    print ("  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========")
+                if guesses == 5:
+                    print ("  +---+\n  |   |\n  O   |\n      |\n      |\n      |\n=========")
+                if guesses == 4:
+                    print ("  +---+\n  |   |\n  O   |\n  |   |\n      |\n      |\n=========")
+                if guesses == 3:
+                    print ("  +---+\n  |   |\n  O   |\n /|   |\n      |\n      |\n=========")
+                if guesses == 2:
+                    print ("  +---+\n  |   |\n  O   |\n /|\  |\n      |\n      |\n=========")
                 break
     print (" ".join(listedudevinnage) + "\n")       
 else:
