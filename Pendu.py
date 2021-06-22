@@ -4,10 +4,11 @@
 import time
 import random
 import sys
+from typing import List
 #voilà
 
 #les variables
-words_to_find = open("mots.txt").read().splitlines()
+words_to_find = open("mots.txt", "rb").read().decode("utf-8").splitlines()
 word_to_find = random.choice(words_to_find).lower()
 # word_to_find = 
 #fin des variables
